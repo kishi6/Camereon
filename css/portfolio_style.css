@@ -69,6 +69,7 @@ a:hover {
   opacity: .5;
 }
 
+
 /* main */
 
 main h1 {
@@ -85,7 +86,8 @@ main h1 {
 
 main h2 {
   font-size: 20px;
-  margin-top: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 main p {
@@ -97,10 +99,44 @@ main section + section {
   margin-top: 60px;
 }
 
-.story{
-  border-left:5px solid #999999; 
-  margin:0 auto; 
-  padding: 10px; 
-  max-width:500px; 
-  color: #666666;
+.play{
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #5d627b;
+  background: white;
+  border-top: solid 5px #5d627b;
+  play-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+.play p {
+  margin: 0; 
+  padding: 0;
+}
+
+.box{
+  margin:2em 0;
+  position: relative;
+  padding: 0.25em 1em;
+  border: solid 2px #5d627b;
+  border-radius: 3px 0 3px 0;
+}
+.box:before,.box:after
+{
+  content: '';
+  position: absolute;
+  width:10px;
+  height: 10px;
+  border: solid 2px #5d627b;
+  border-radius: 50%;
+}
+.box:after {
+  top:-12px;
+  left:-12px;
+}
+.box:before {
+  bottom:-12px;
+  right:-12px;
+}
+.box p {
+  margin: 0; 
+  padding: 0;
 }
